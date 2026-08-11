@@ -1,0 +1,25 @@
+name: Main Workflow
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Eslint check
+        uses: krizzu/eslint-check-action@v1.1.0
+        with:
+          # GitHub token
+          ghToken: ${{ secrets.GITHUB_TOKEN }}
+          # Relative path to files/directories to run lint on.
+          eslintFiles: .
+          # Relative path to eslint config. Can either be ".js" config, ".eslintrc" or "package.json".
+          eslintConfig: eslint.config.mjs
+          # File extension to run linting on.
+          eslintExt: js,ts,jsx,tsx
