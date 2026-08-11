@@ -11,8 +11,11 @@ import { openrouter } from "@/module/ai/lib/openrouter";
 import { google } from "@ai-sdk/google";
 
 export const generateReview = inngest.createFunction(
-  { id: "generate-review", concurrency: 5 },
-  { event: "pr.review.requested" },
+  {
+    id: "generate-review",
+    concurrency: 5,
+    triggers: [{ event: "pr.review.requested" }],
+  },
   async ({ event, step }) => {
     console.log(`[generateReview] Event received:`, { 
       eventName: event.name, 
