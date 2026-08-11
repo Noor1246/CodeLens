@@ -61,7 +61,7 @@
     "framer-motion": "^11.18.2",
     "fslightbox-react": "^2.0.2",
     "gsap": "^3.14.2",
-    "inngest": "^3.49.3",
+    "inngest": "^4.18.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.561.0",
     "motion": "^12.26.2",
