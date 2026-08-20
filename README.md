@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🔍 Inspectra</h1>
+  <h1>🔍 CodeLens</h1>
   <p><strong>AI-Powered Code Review & Repository Intelligence Platform</strong></p>
   
   <p>
@@ -20,11 +20,11 @@
 
 ## 📖 Overview
 
-**Inspectra** is an intelligent, AI-powered code review assistant and repository management platform designed to streamline your development workflow. By leveraging advanced LLMs (Google Gemini) and RAG (Retrieval-Augmented Generation) technology with Pinecone vector database, Inspectra provides deep, context-aware insights into your code, automates reviews, and offers comprehensive analytics for your GitHub repositories.
+**CodeLens** is an intelligent, AI-powered code review assistant and repository management platform designed to streamline your development workflow. By leveraging advanced LLMs (Google Gemini) and RAG (Retrieval-Augmented Generation) technology with Pinecone vector database, CodeLens provides deep, context-aware insights into your code, automates reviews, and offers comprehensive analytics for your GitHub repositories.
 
-### Why Inspectra?
+### Why CodeLens?
 
-- 🤖 **Context-Aware AI Reviews**: Unlike generic code reviewers, Inspectra indexes your entire codebase to understand project patterns and conventions
+- 🤖 **Context-Aware AI Reviews**: Unlike generic code reviewers, CodeLens indexes your entire codebase to understand project patterns and conventions
 - 🔗 **Deep GitHub Integration**: Seamless webhook-based automation for real-time PR reviews
 - 💬 **Automated PR Comments**: AI-generated reviews posted directly to your Pull Requests
 - 📊 **Rich Analytics**: Comprehensive dashboards with contribution graphs and activity metrics
@@ -166,7 +166,7 @@
                                                     │
                                                     ▼
                                           ┌─────────────────┐
-                                          │  Google Gemini  │
+                                          │   OpenRouter │
                                           │   (AI/LLM)      │
                                           └─────────────────┘
 ```
@@ -210,7 +210,7 @@
 ## 📁 Project Structure
 
 ```
-inspectra/
+CodeLens/
 ├── app/                          # Next.js App Router
 │   ├── (auth)/                   # Authentication routes
 │   │   └── login/                # Login page
@@ -296,7 +296,7 @@ GITHUB_CLIENT_ID="your-github-client-id"
 GITHUB_CLIENT_SECRET="your-github-client-secret"
 
 # AI & Vector Database
-GOOGLE_API_KEY="your-google-ai-api-key"
+GOOGLE_GENERATIVE_AI_API_KEY="your-google-ai-api-key"
 OPENROUTER_API_KEY="your-openrouter-api-key"
 PINECONE_DB_API_KEY="your-pinecone-api-key"
 
@@ -309,8 +309,8 @@ NEXT_PUBLIC_APP_BASE_URL="http://localhost:3000"
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/krishna9358/inspectra.git
-   cd inspectra
+   git clone https://github.com/Noor1246/CodeLens.git
+   cd CodeLens
    ```
 
 2. **Install dependencies**
@@ -397,5 +397,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-  <p>Built with ❤️ by <a href="https://github.com/krishna9358">Krishna Mohan</a></p>
+  <p>Built with ❤️ by <a href="https://github.com/Noor1246">Noor Chopra</a></p>
 </div>
